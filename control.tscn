@@ -29,3 +29,17 @@ offset_right = 608.0
 offset_bottom = 292.0
 text = "fish"
 script = ExtResource("3_qtu10")
+
+[node name="Timer" type="Timer" parent="Button"]
+wait_time = 1.5
+
+[node name="ProgressBar" type="ProgressBar" parent="Button"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 150.0
+offset_right = 375.0
+offset_bottom = 177.0
+max_value = 150.0
+show_percentage = false
+
+[connection signal="timeout" from="Button/Timer" to="Button" method="_on_timer_timeout"]
