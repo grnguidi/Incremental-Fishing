@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://chttxmwnc7pbt"]
+[gd_scene load_steps=5 format=3 uid="uid://chttxmwnc7pbt"]
 
 [ext_resource type="Script" uid="uid://dme046x30ebs5" path="res://control.gd" id="1_0fbet"]
 [ext_resource type="Script" uid="uid://cdnuc0pyitqus" path="res://label.gd" id="2_62e2m"]
 [ext_resource type="Script" uid="uid://bx2y57ip8wuge" path="res://button.gd" id="3_qtu10"]
 [ext_resource type="Script" uid="uid://046w3gttp8y2" path="res://label_2.gd" id="4_ee4bf"]
-[ext_resource type="Script" uid="uid://rl4inn5x4k2g" path="res://button_2.gd" id="5_kbped"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -51,14 +50,5 @@ offset_top = 222.0
 offset_right = 330.0
 offset_bottom = 531.0
 script = ExtResource("4_ee4bf")
-
-[node name="Button2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 776.0
-offset_top = 219.0
-offset_right = 1132.0
-offset_bottom = 304.0
-text = "Sell"
-script = ExtResource("5_kbped")
 
 [connection signal="timeout" from="Button/Timer" to="Button" method="_on_timer_timeout"]

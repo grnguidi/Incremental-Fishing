@@ -7,10 +7,17 @@ func _process(delta: float) -> void:
 
 func _pressed() -> void:
 	if time:
-		Globals.money += 1
+		#Globals.money += 1
 		$Timer.start()
 		time = false
-	
+		
+		
+		var fishInline = Fishes.FISHESPOOL.keys().pick_random()
+		if !Fishes.yourFished.has(fishInline):
+			Fishes.yourFished[fishInline] = 1
+		else:
+			Fishes.yourFished[fishInline] += 1
+			
 
 
 func _on_timer_timeout() -> void:

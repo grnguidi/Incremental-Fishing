@@ -18,3 +18,4 @@ config/icon="res://icon.svg"
 [autoload]
 
 Globals="*res://Scripts/Globals.gd"
+Fishes="*res://Scripts/fishes.gd"
